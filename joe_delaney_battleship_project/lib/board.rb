@@ -13,8 +13,9 @@ class Board
         @size = n * n
     end
 
-    def [](indices)
-        @grid[indices[0]][indices[1]]
+    def [](pos)
+        row, col = pos
+        @grid[row][col]
     end
 
     def []=(position, value)
